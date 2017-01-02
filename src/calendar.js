@@ -1,3 +1,4 @@
+require('./components/shared');
 import React from 'react';
 import { render } from 'react-dom';
 

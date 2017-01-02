@@ -1,0 +1,118 @@
+.EventCard {
+    margin: 0 auto;
+    background: white;
+    max-width: 280px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.14),
+    0 1px 4px -1px rgba(0,0,0,.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.EventCard .header {
+    padding: 8px 12px;
+    color: white;
+    display: flex;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    justify-content: space-between;
+}
+
+.EventCard .header .date {
+    margin-right: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .month { 
+        font-weight: bold; 
+        font-size: 1em; 
+        text-align: center;
+        display: block;
+    }
+    .day {
+        display: block;
+        font-size: 3.5em;
+        font-weight: 900;
+        text-align: center;
+        line-height: 1em;
+    }
+}
+
+.EventCard .header .action-items {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    a {
+        color: white;
+        text-decoration: none;
+        padding: 6px 8px;
+        display: block;
+        font-size: .9em;
+        box-shadow: 0 1px 8px 0 rgba(0,0,0,.14),
+        0 1px 4px -1px rgba(0,0,0,.2);
+        margin-bottom: 12px;
+        transition: all .2s ease-in-out;
+        background: none;
+        border-radius: 3px;
+        &.posts:hover { background: #3b5999 }
+        &.cal:hover { background: #2979FF }
+    }
+    a:last-of-type {
+        margin-bottom: 0;
+    }
+
+    svg {
+        width: 9px;
+        fill: #ffffff;
+        margin-right: 6px;
+    }
+}
+
+.EventCard .body {
+    padding: 16px;
+    text-decoration: none;
+    color: #3e3e3e;
+    position: relative;
+    overflow: hidden;
+}
+
+.EventCard .body .logo{
+    position: absolute;
+    width: 100%;
+    bottom: -25%;
+    right: -50%;
+    transform: rotate(-10deg);
+}
+.EventCard .body .info{
+    position: relative;
+}
+
+.EventCard .body {
+    h1 {
+        margin: 0;
+        line-height: 1em;
+        margin-bottom: 6px;
+        font-size: 1.8em;
+        font-weight: 900;
+    }
+    .host {
+        display: block;
+        font-style: italic;
+        font-size: 1.05em;
+        margin-bottom: 4px;
+    }
+    .location {
+        display: block;
+        font-size: 1.05em;
+    }
+
+    .type {
+        display: block;
+        font-size: 1.05em;
+        margin-top: 36px;
+        color: #8e8e8e;
+        text-transform: capitalize;
+    }
+}

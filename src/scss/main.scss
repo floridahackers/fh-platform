@@ -1,0 +1,30 @@
+@import "utils/fonts";
+@import "utils/mixins";
+@import "utils/normalize";
+@import "utils/bootstrap_base";
+
+@import "utils/layout_helpers";
+
+$font-stack: 'Pier Sans', sans-serif;
+$floatie-blue: #aee0f6;
+$floatie-blue-dark: #8cd6f5;
+$fl-sand: #fdf6b6;
+$fl-wetsand: #ffeeaf;
+$fl-sandStone: #bc6e29;
+$fl-brown: #7b5521;
+
+body {
+  font-family: $font-stack;
+  background: $floatie-blue;
+  color: white;
+  @include min-bp(960px) {
+    font-size: 16px;
+  }
+}
+
+@import "components/event_card";
+
+@import "home";
+@import "speak";
+@import "live";
+

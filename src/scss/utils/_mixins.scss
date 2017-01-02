@@ -1,0 +1,42 @@
+/* Mobile First Breakpoints */
+@mixin min-bp($point) {
+  @if $point == sm {
+    @media (min-width: 491px) { @content; }
+  }
+  @else if $point == med {
+    @media (min-width: 769px) { @content; }
+  }
+  @else if $point == reg {
+    @media (min-width: 961px)  { @content; }
+  }
+  @media (min-width: $point) { @content; }
+}
+
+/* Desktop First Breakpoints */
+@mixin max-bp($point) {
+  @if $point == xs {
+    @media (max-width: 490px) { @content; }
+  }
+  @else if $point == sm {
+    @media (max-width: 768px) { @content; }
+  }
+  @else if $point == med {
+    @media (max-width: 960px)  { @content; }
+  }
+  @media (max-width: $point) { @content; }
+}
+
+@mixin placeholder-styles() {
+  &::-webkit-input-placeholder {
+     @content;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+     @content;
+  }
+  &::-moz-placeholder {  /* Firefox 19+ */
+     @content;
+  }
+  &:-ms-input-placeholder {
+     @content;
+  }
+}

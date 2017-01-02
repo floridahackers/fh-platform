@@ -1,9 +1,15 @@
 var path = require('path');
 var webpack = require('webpack');
+var loaders = require('./webpack.loaders');
 var DashboardPlugin = require('webpack-dashboard/plugin');
 
 const HOST = process.env.HOST || "127.0.0.1";
 const PORT = process.env.PORT || "3000";
+
+loaders.push({
+  test: /\.scss$/,
+  loaders: ["style-loader", "css-loader", "sass-loader"]
+});
 
 module.exports = {
   devtool: process.env.WEBPACK_DEVTOOL || 'eval-source-map',
@@ -25,13 +31,7 @@ module.exports = {
     publicPath: "/",
   },
   module: {
-    loaders: [
-      {
-        test: /\.js$/,
-        loaders: ["react-hot", "babel"],
-        exclude: /node_modules/
-      },
-    ]
+    loaders
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),

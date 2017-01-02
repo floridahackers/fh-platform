@@ -1,0 +1,142 @@
+.speak .navbar {
+  background: $floatie-blue;
+  padding: 16px 10px;
+  .container {
+    text-align: center;
+    @include min-bp(570px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  .logo {
+    text-align: center;
+    max-width: 140px;
+    display: inline-block;
+    margin-right: auto;
+  }
+  .nav {
+    a {
+      color: white;
+      padding: 8px 8px;
+      margin: 8px;
+    }
+    margin-top: 16px;
+    @include min-bp(570px) {
+      margin-top: 0;
+      a {
+        padding: 8px 8px;
+        margin: 14px;
+      }
+    }
+  }
+}
+
+.fa.fa-chevron-left{
+  color: white;
+  margin-right: 20px;
+  font-size: 20px;
+  margin-top:8px;
+  @media (max-width: 570px){
+    position: absolute;
+    top: 18px;
+    left: 20px;
+  }
+}
+
+//////////
+// CONTENT
+//////////////////////////////
+
+.speak .speak-section {
+  background-color: $fl-sand;
+  padding: 48px 0 72px;
+  color: $fl-sandStone;
+  @include min-bp(420px) {
+    font-size: 1.4em;
+    line-height: 1.7em;
+  }
+  .section-header {
+    font-size: 1.8em;
+    line-height: 1.5em;
+    margin-top: 14px;
+    color: $fl-brown;
+    font-weight: normal;
+  }
+  .section-subheader {
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: normal;
+  }
+}
+
+// Intro
+////////////////////
+
+.speak-section.intro {
+  background: $floatie-blue-dark;
+  .section-header { color: white; }
+  color: white;
+}
+
+// Talks
+////////////////////
+
+.speak-section.talks {
+  .talk-type {
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 1.7em;
+    position: relative;
+    @include min-bp(490px) {
+      margin-left: 30px;
+      // margin-left: 95px;
+      &:before {
+        position: absolute;
+        content: "";
+        left: -30px;
+        width: 0px;
+        // width: 75px;
+        height: 85px;
+        display: inline-block;
+        border: 5px solid $fl-sandStone;
+        border-radius: 10px;
+      }
+    }
+    .title {
+      font-weight: normal;
+      color: $fl-brown;
+      margin: 0;
+    }
+    .available, .description {
+      margin: 0;
+    }
+    .available {
+      color: #960c0c;
+    }
+  }
+}
+
+
+// CTAs
+////////////////////
+
+.speak-section.calls-to-action {
+  background: white;
+  text-align: center;
+  padding: 36px 10px;
+  .section-header {
+    color: $fl-sandStone;
+  }
+  .button {
+    background: $fl-sandStone;
+    color: white;
+    &:first-of-type { margin-left: 0; }
+    &:last-of-type { margin-right: 0; }
+    @include min-bp(420px) {
+      padding: 14px 20px;
+      line-height: 1em;
+      margin: 0 28px;
+    }
+  }
+}

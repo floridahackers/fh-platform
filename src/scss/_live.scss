@@ -1,0 +1,287 @@
+.live .navbar {
+  background: $floatie-blue;
+  padding: 16px 10px;
+  .container {
+    text-align: center;
+    @include min-bp(570px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  .logo {
+    text-align: center;
+    max-width: 140px;
+    display: inline-block;
+    margin-right: auto;
+  }
+  .nav {
+    a {
+      color: white;
+      padding: 8px 8px;
+      margin: 8px;
+    }
+    margin-top: 16px;
+    @include min-bp(570px) {
+      margin-top: 0;
+      a {
+        padding: 8px 8px;
+        margin: 14px;
+      }
+    }
+  }
+}
+
+.fa.fa-chevron-left{
+  color: white;
+  margin-right: 20px;
+  font-size: 20px;
+  margin-top:8px;
+  @media (max-width: 570px){
+    position: absolute;
+    top: 18px;
+    left: 20px;
+  }
+}
+
+//////////
+// CONTENT
+//////////////////////////////
+
+.live .live-section {
+  background-color: $fl-sand;
+  padding: 48px 0 72px;
+  color: $fl-sandStone;
+  @include min-bp(420px) {
+    font-size: 1.4em;
+    line-height: 1.7em;
+  }
+  .section-header {
+    font-size: 1.8em;
+    line-height: 1.5em;
+    margin-top: 14px;
+    color: $fl-brown;
+    font-weight: normal;
+  }
+  .section-subheader {
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: normal;
+  }
+   a {
+     color: $fl-brown;
+     font-weight: bold;
+     text-decoration: underline;
+   }
+}
+
+// Schedule
+////////////////////
+
+.live-section.intro {
+  .cards-section {
+    margin-bottom: 24px;
+    .title {
+      margin-bottom: 8px;
+      font-weight: 400;
+    }
+  }
+  .card {
+    padding: 6px 16px 6px 12px;
+    margin-bottom: 12px;
+    margin-right: 12px;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.3em;
+    border-radius: 2px;
+    color: #7b5521;
+    border-left: 7px solid #bc6e29;
+    .title {
+      margin: 0;
+      margin-bottom: 4px;
+    }
+    .subtitle {
+      margin: 0;
+    }
+  }
+  .action-button {
+    color: white;
+    background: $fl-sandStone;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 1.2em;
+    padding: 12px 28px;
+    margin-bottom: 12px;
+    border-radius: 7px;
+    margin-right: 12px;
+    box-shadow: 0 0 4px 0 rgba(156, 156, 156, 0.48);
+    transition: all .2s ease-in-out;
+    i {
+      margin-right: 6px;
+    }
+    &:hover {
+      background: #a05615;
+      box-shadow: 0 1px 4px 1px #9c9c9c;
+    }
+  }
+}
+
+
+// Schedule
+////////////////////
+
+.live-section.schedule {
+  background: $floatie-blue;
+  .section-header { color: white; }
+  color: white;
+
+  .day {
+    margin-bottom: 36px;
+    h3 {
+      margin-bottom: 0;
+      font-size: 1.5em;
+      font-weight: 400;
+      margin-bottom: 16px;
+      margin-top: 0;
+    }
+    .event {
+      padding: 16px 32px;
+      line-height: 1.5em;
+    }
+    .event.unboxed {
+      padding: 24px 32px;
+    }
+    .event.boxed {
+      background: white;
+      color: #2d2d2d;
+      box-shadow: 16px 0 0 0 inset rgba(black, 0);
+      margin-bottom: 16px;
+      position: relative;
+      h4.name {
+        margin: 0;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        font-weight: 400;
+      }
+      .speaker {
+        margin: 4px 0 12px;
+        line-height: 1em;
+        font-size: 16px;
+        color: #929292;
+      }
+      .time {
+        color: $floatie-blue-dark;
+        margin-top: 4px;
+        line-height: 1em;
+      }
+      + .event.unboxed {
+        margin-top: -16px;
+      }
+      &.green {
+        box-shadow: 16px 0 0 0 inset #8CFD90;
+      }
+      &.red {
+        box-shadow: 16px 0 0 0 inset #FDA090;
+      }
+      &.orange {
+        box-shadow: 16px 0 0 0 inset #FED48F;
+      }
+      &.yellow {
+        box-shadow: 16px 0 0 0 inset #FEED90;
+      }
+      &.pink {
+        box-shadow: 16px 0 0 0 inset #FAA6E4;
+      }
+      &.purple {
+        box-shadow: 16px 0 0 0 inset #CC90FC;
+      }
+      &.brown {
+        box-shadow: 16px 0 0 0 inset #A4885E;
+      }
+      &.group-start {
+        &:before {
+          content: '';
+          display: block;
+          width: 16px;
+          height: 16px;
+          position: absolute;
+          left: 0;
+          top: 100%;
+        }
+        &.green {
+          &:before { background: #8CFD90; }
+        }
+        &.red {
+          &:before { background: #FDA090; }
+        }
+        &.orange {
+          &:before { background: #FED48F; }
+        }
+        &.yellow {
+          &:before { background: #FEED90; }
+        }
+        &.pink {
+          &:before { background: #FAA6E4; }
+        }
+        &.purple {
+          &:before { background: #CC90FC; }
+        }
+        &.brown {
+          &:before { background: #A4885E; }
+        }
+      }
+      &.group-end {
+        &:after {
+          content: '';
+          display: block;
+          width: 16px;
+          height: 16px;
+          position: absolute;
+          left: 0;
+          bottom: 100%;
+        }
+        &.green {
+          &:after { background: #8CFD90; }
+        }
+        &.red {
+          &:after { background: #FDA090; }
+        }
+        &.orange {
+          &:after { background: #FED48F; }
+        }
+        &.yellow {
+          &:after { background: #FEED90; }
+        }
+        &.pink {
+          &:after { background: #FAA6E4; }
+        }
+        &.purple {
+          &:after { background: #CC90FC; }
+        }
+        &.brown {
+          &:after { background: #A4885E; }
+        }
+      }
+
+
+    }
+  }
+}
+
+
+// Housing
+////////////////////
+
+.live-section.housing {
+  background: $floatie-blue;
+  .section-header { color: white; }
+  color: white;
+  a {
+    color: white;
+    &.button {
+      color: $floatie-blue-dark;
+      text-decoration: none;
+    }
+  }
+}

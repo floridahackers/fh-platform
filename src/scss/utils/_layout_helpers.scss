@@ -1,0 +1,22 @@
+@include min-bp(768px) {
+  .container {
+    max-width: 960px;
+  }
+}
+.mb-xs { margin-bottom: 4px;}
+.mb-sm { margin-bottom: 8px;}
+.mb-md { margin-bottom: 16px;}
+.mb-lg { margin-bottom: 32px;}
+
+.button {
+  display: inline-block;
+  background: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+  &:hover {
+    text-decoration: none;
+    background: rgba(white, .9);
+  }
+}

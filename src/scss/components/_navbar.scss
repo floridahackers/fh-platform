@@ -1,0 +1,98 @@
+.the-header {
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 12px 20px;
+        @include min-bp(600px) {
+            padding: 40px 20px;
+        }
+    }
+    .left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex: 1;
+    }
+    .logo {
+        display: inline-block;
+        max-width: 45px;
+        @include min-bp(600px) {
+            max-width: 65px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .identity {
+        visibility: visible;
+        opacity: 1;
+        transition: all .2s ease-in-out;
+        margin-left: 20px;
+        h1 { 
+            margin: 0;    
+            letter-spacing: 1px; 
+            line-height: 1em;
+            margin-bottom: 8px;
+        }
+        p { 
+            margin: 0;
+            font-weight: 300;
+            letter-spacing: .035em;
+            font-size: 1.1em;
+        }
+    }
+    .right {
+        a { display: inline-block; }
+        svg.burger-menu {
+            width: 35px;
+            height: 35px;
+            path { 
+                fill: white;
+                stroke: white;
+            }
+        }
+    }
+}
+#header-sticky-wrapper {
+    transition: all .2s ease-in-out;
+}
+#header-sticky-wrapper.is-sticky {
+    .the-header {
+        z-index: 2 !important;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.14), 
+                    0 1px 4px -1px rgba(0, 0, 0, 0.2);
+    }
+    .header-container {
+        @include min-bp(600px) {
+            padding: 8px 20px;
+            .logo {
+                max-width: 45px;
+            }
+        }
+    }
+}
+
+.home {
+    #header-sticky-wrapper.is-sticky .identity {
+        visibility: hidden; 
+        opacity: 0;
+    }
+    .identity.lg {
+        display: none;
+        @include min-bp(600px){
+            display: block;
+        }
+    }
+    .identity.sm {
+        text-align: center;
+        h1, p { margin: 0; }
+        h1 { margin-bottom: 4px; }
+        @include min-bp(600px){
+            display: none;
+        }
+    }
+}

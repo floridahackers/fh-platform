@@ -1,22 +1,71 @@
+h1, h2, h3, h4 {
+    font-weight: 600;
+}
+
+
 @include min-bp(768px) {
-  .container {
-    max-width: 960px;
-  }
+    .container {
+        max-width: 960px;
+    }
 }
 .mb-xs { margin-bottom: 4px;}
 .mb-sm { margin-bottom: 8px;}
 .mb-md { margin-bottom: 16px;}
 .mb-lg { margin-bottom: 32px;}
 
+.action-card {
+    background: white;
+    color: #282828;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    .action-card__content {
+        padding: 28px 32px;
+        h3 {
+            margin-top: 0;
+            font-size: 1.55em;
+            margin-bottom: 12px;
+        }
+    }
+    &.action-card--is-large {
+        padding-bottom: 0;
+        a {
+            background: #38A2CC;
+            color: white;
+            display: inline-block;
+            width: 100%;
+            padding: 16px 32px;
+            font-size: 1.3em;
+            font-weight: 500;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            text-decoration: none;
+            display: flex;
+            transition: all .2s ease-in-out;
+            span {
+                margin-left: auto;
+                font-size: 1.5em;
+                line-height: 1em;
+            }
+            &:hover {
+                background: darken(#38A2CC, 5%);
+            }
+        }
+    }
+}
+.card-shadow {
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.14),
+                0 1px 4px -1px rgba(0,0,0,.2);
+}
+
 .button {
-  display: inline-block;
-  background: white;
-  padding: 8px 16px;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: all .2s ease-in-out;
-  &:hover {
+    display: inline-block;
+    background: white;
+    padding: 8px 16px;
+    border-radius: 8px;
     text-decoration: none;
-    background: rgba(white, .9);
-  }
+    transition: all .2s ease-in-out;
+    &:hover {
+        text-decoration: none;
+        background: rgba(white, .9);
+    }
 }

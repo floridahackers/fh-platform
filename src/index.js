@@ -21,7 +21,6 @@ class HomeApp extends React.Component {
   render() {
     return (
       <div>
-        <h1>Hello HomePage</h1>
         <EventCard info={event_info} />
       </div>
     );
@@ -29,4 +28,4 @@ class HomeApp extends React.Component {
 }
 
 render(<HomeApp />, 
-  document.querySelector('.app-container'));
+  document.querySelector('.events-app'));

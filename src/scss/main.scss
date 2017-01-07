@@ -13,9 +13,18 @@ $fl-wetsand: #ffeeaf;
 $fl-sandStone: #bc6e29;
 $fl-brown: #7b5521;
 
+$fh-blue: #74D7FF;
+$fh-brown: #825329;
+$fh-sand: #FFE598;
+
+$fh-pink: #F45BA1;
+$fb-blue: #385797;
+$slack-red: #FF5869;
+
+
 body {
   font-family: $font-stack;
-  background: $floatie-blue;
+  background: $fh-blue;
   color: white;
   @include min-bp(960px) {
     font-size: 16px;
@@ -23,6 +32,7 @@ body {
 }
 
 @import "components/event_card";
+@import "components/menu";
 
 @import "home";
 @import "speak";

@@ -3,9 +3,10 @@
 @import "utils/normalize";
 @import "utils/bootstrap_base";
 
-@import "utils/layout_helpers";
+@import "utils/react_datepicker";
 
 $font-stack: 'Pier Sans', sans-serif;
+$font-color: #282828;
 $floatie-blue: #aee0f6;
 $floatie-blue-dark: #8cd6f5;
 $fl-sand: #fdf6b6;
@@ -15,12 +16,14 @@ $fl-brown: #7b5521;
 
 $fh-blue: #74D7FF;
 $fh-brown: #825329;
-$fh-sand: #FFE598;
+// $fh-sand: #FFE598;
+$fh-sand: #FDECC2;
 
 $fh-pink: #F45BA1;
 $fb-blue: #385797;
 $slack-red: #FF5869;
 
+@import "utils/layout_helpers";
 
 body {
   font-family: $font-stack;
@@ -35,6 +38,6 @@ body {
 @import "components/menu";
 
 @import "home";
+@import "add_event";
 @import "speak";
 @import "live";
-

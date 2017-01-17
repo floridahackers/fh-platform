@@ -5,22 +5,22 @@ const menu_items = [
   {
     label: 'Home',
     subtitle: 'Landing page + links to join the community.',
-    path: 'public/'
+    path: '/public'
   },
   {
     label: 'Calendar',
     subtitle: 'Crowdsourced list of events to attend.',
-    path: 'public/calendar.html'
+    path: 'calendar.html'
   },
   {
     label: 'About FH',
     subtitle: 'The ins and outs of how the community functions.',
-    path: 'public/about.html'
+    path: 'about.html'
   },
   {
     label: 'Add an Event',
     subtitle: 'Find out how to add an event to the calendar.',
-    path: 'public/add-event.html'
+    path: 'add-event.html'
   },
 ];
 
@@ -89,6 +89,9 @@ $(document).ready(function() {
   $('#header').sticky();  
   $(window).on('resize', function() {
     $('#header').sticky();  
+  });
+  $(window).on('scroll', function(){
+    $('#header').sticky();
   });
 });
 

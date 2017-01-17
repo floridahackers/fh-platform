@@ -13,6 +13,7 @@ body.is-menu-active {
     transition: all .22s ease-in-out;
     overflow: auto;
     z-index: 10;
+    color: white;
     &.is-active {
         transform: translateY(0);
     }

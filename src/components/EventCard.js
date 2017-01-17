@@ -1,7 +1,6 @@
 import React from 'react';
 import moment from 'moment';
 
-
 class EventCard extends React.Component {
   render() {
     const {
@@ -61,7 +60,6 @@ class EventHeader extends React.Component {
     const {date, name, color, host, location} = this.props;
     const search_link = `https://www.facebook.com/groups/1023750727698510/search/?query=${name}`;
     const from_date = moment(date.from);
-    console.log(this.getCalendarUrl());
 
     return (
       <div className="header" style={{backgroundColor: color}}>
@@ -86,7 +84,7 @@ const EventBody = ({
   name, host, location, event_url, logo_url, event_type, color
 }) => {
   return (
-    <a target="_blank" href={event_url} className="body">
+    <a target="_blank" href={event_url || '#'} className="body">
       <img className="logo" src={logo_url} />
       <div className="info">
         <h1>{name}</h1>

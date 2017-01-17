@@ -1,0 +1,92 @@
+body.add-event {
+    background: $fh-sand;
+    color: $font-color;
+    .the-header {
+        background: $fh-sand;
+    }
+    .the-header .right svg.burger-menu path {
+        fill: $font-color;
+        stroke: $font-color;
+    }
+    .container {
+        max-width: 760px;
+    }
+}
+
+.add-event {
+    .intro {
+        text-align: center;
+        padding: 72px 0;
+        h1, p { margin: 0; };
+        h1 { margin-bottom: 12px; }
+        p { font-size: 1.2em; }
+    } 
+    .AddEvent {
+        display: flex;
+        padding-bottom: 96px;
+        .form-wrap {
+            flex: 1 1 65%;
+        }
+        .card-wrap {
+            flex: 1 1 35%;
+        }
+        h3 {
+            color: $fh-brown;
+            margin: 0;
+            margin-bottom: 24px;
+        }
+    }
+    .card-wrap .sticky {
+        padding-top: 80px;
+    }
+}
+
+.EventForm {
+    background-color: #fdf2d3;
+    margin-right: 36px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.14),
+    0 1px 4px -1px rgba(0,0,0,.2);
+    padding: 24px 32px;
+}
+
+.EventForm .InputGroup {
+    margin-bottom: 28px;
+    label {
+        color: #7b5521;
+        display: block;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+    input[type="text"],
+    input[type="email"] {
+        border: none;
+        background: none;
+        border-bottom: 2px solid #7b5521;
+        display: inline-block;
+        font-size: 1em;
+        padding: 6px 0 4px;
+    }
+    ::placeholder {
+        color: rgba($fh-brown, .3);
+        font-weight: 100;
+    }
+    &.color {
+        input{
+            text-transform: uppercase;
+        }
+        span {
+            color: #7b5521;
+            border-bottom: 2px solid #7b5521;
+            font-size: 1em;
+            padding: 6px 4px 4px 0;
+            display: inline-block;
+        }    
+    }
+    .helper-text {
+        display: block;
+        color: rgba($fh-brown, .8);
+        font-size: .9em;
+        margin-top: 8px,;
+    }
+}

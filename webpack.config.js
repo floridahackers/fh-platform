@@ -24,6 +24,11 @@ module.exports = {
       'webpack/hot/only-dev-server',
       './src/calendar.js'
     ],
+    addevent: [
+      'webpack-dev-server/client?http://' + HOST + ":" + PORT,
+      'webpack/hot/only-dev-server',
+      './src/add-event.js'
+    ],
   },
   output: {
     path: path.join(__dirname, "dist"),

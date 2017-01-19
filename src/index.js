@@ -22,6 +22,7 @@ class HomeApp extends React.Component {
     return (
       <div>
         <EventCard info={event_info} />
+        <EventCard info={event_info} />
       </div>
     );
   }

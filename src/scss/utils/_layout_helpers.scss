@@ -8,6 +8,13 @@ h1, h2, h3, h4 {
         max-width: 960px;
     }
 }
+
+blockquote {
+    box-shadow: 5px 0 0 0 #E2CD98 inset;
+    margin: 0;
+    padding: 12px 20px;
+}
+
 .mb-xs { margin-bottom: 4px;}
 .mb-sm { margin-bottom: 8px;}
 .mb-md { margin-bottom: 16px;}

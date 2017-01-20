@@ -1,0 +1,96 @@
+body.about {
+    background: $fh-sand;
+    color: $font-color;
+    .the-header {
+        background: $fh-sand;
+    }
+    .the-header .right svg.burger-menu path {
+        fill: $font-color;
+        stroke: $font-color;
+    }
+    .container {
+        padding-top: 16px;
+    }
+    .the-header {
+        .header-container {
+            padding: 12px 20px;
+        }
+        .logo {
+            max-width: 45px;
+        }
+    }
+}
+
+body.about .container {
+    display: flex;
+    .content {
+        flex: 1;
+    }
+    .toc {
+        display: none;
+        @include min-bp(760px) {
+            display: block;
+            text-align: right;
+            max-width: 260px;
+            margin-left: 16px;
+            width: 100%;
+        }
+    }
+
+    [id^="header_"] {
+        margin-bottom: 32px;
+    }
+}    
+
+body.about .toc {
+    font-size: 14px;
+    a {
+        display: block;
+        color: $font-color;
+        margin-bottom: 4px;
+        &.bigger {
+            font-weight: 600;
+        }
+    }
+}
+
+body.about .the-values {
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 2px solid #E2CD98;
+    margin: 24px 0 72px;
+    .value {
+        flex: 1 1 50%;
+        &:nth-of-type(2n-1) {
+            padding-right: 16px;
+        }
+    }
+}
+
+body.about .notes {
+    margin: 80px auto 80px;
+    padding: 8px 24px;
+    border-radius: 5px;
+    max-width: 600px;
+    text-align: center;
+    border: 2px solid #E2CD98;
+    p {
+        text-align: left;
+    }
+    a {
+        background: rgba($fh-brown, .8);
+        display: inline-block;
+        color: $fh-sand;
+        text-decoration: none;
+        padding: 12px 36px;
+        border-radius: 5px;
+        margin-bottom: 16px;
+        transition: all .2s ease-in-out;
+        &:hover {
+            background: rgba($fh-brown, 1);
+        }
+    }
+}

@@ -480,7 +480,6 @@ class DateInput extends React.Component {
               <div style={ styles.cover  } onClick={ this.handleClose  }/>
               <DatePicker 
                 inline 
-                minDate={moment()} 
                 selected={ this.state.date  } 
                 onChange={ this.handleChange  } 
               />

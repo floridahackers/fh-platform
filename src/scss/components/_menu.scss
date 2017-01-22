@@ -10,12 +10,14 @@ body.is-menu-active {
     left: 0px;
     background: $fh-blue;
     transform: translateY(-100%);
-    transition: all .22s ease-in-out;
+    opacity: 0;
+    transition: all .2s ease-in-out;
     overflow: auto;
     z-index: 10;
     color: white;
     &.is-active {
         transform: translateY(0);
+        opacity: 1;
     }
 }
 .menu-app__wrap {

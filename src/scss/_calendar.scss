@@ -1,0 +1,28 @@
+body.calendar {
+    background: $fh-sand;
+    color: $font-color;
+    .the-header {
+        background: $fh-sand;
+    }
+    .the-header .right svg.burger-menu path {
+        fill: $font-color;
+        stroke: $font-color;
+    }
+    .container {
+    }
+}
+
+.calendar .intro {
+    display: flex;
+    margin-bottom: 36px;
+    p {
+        font-size: 1.2em;
+    }
+}
+
+.calendar .UpcomingEvents {
+    display: flex;
+    .EventCard {
+        margin: 0 20px 20px 0;
+    }
+}

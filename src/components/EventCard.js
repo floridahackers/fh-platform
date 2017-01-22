@@ -16,9 +16,11 @@ class EventCard extends React.Component {
           color={color}
           host={host}
           location={location}
+          event_url={event_url}
         />
         <EventBody 
           name={name}
+          date={date}
           color={color}
           host={host}
           location={location}
@@ -34,7 +36,31 @@ class EventCard extends React.Component {
 export default EventCard;
 
 class EventHeader extends React.Component {
+  render() {
+    const {date, name, color, host, location, event_url} = this.props;
+    const search_link = `https://www.facebook.com/groups/1023750727698510/search/?query=${name}`;
+    const from_date = moment(date.from);
 
+    return (
+      <div className="header" style={{backgroundColor: color}}>
+        <div className="date">
+          <span className="month">{from_date.format('MMMM')}</span>
+          <span className="day">{from_date.format('D')}</span>
+        </div>
+        <div className="action-items">
+          <a className="home" target="_blank" href={event_url || '#'}>
+            <HomeIcon />  Find Out More
+          </a>
+          <a className="posts" target="_blank" href={search_link}>
+            <CommentIcon /> Search for Posts
+          </a>
+        </div>
+      </div>
+    )
+  }
+}
+
+class EventBody extends React.Component {
   formatTime(date) {
     let formattedDate = moment.utc(date).format('YYYYMMDDTHHmmssZ');
     return formattedDate.replace('+00:00', 'Z');
@@ -56,47 +82,39 @@ class EventHeader extends React.Component {
 
     return calendarUrl;
   }
-  render() {
-    const {date, name, color, host, location} = this.props;
-    const search_link = `https://www.facebook.com/groups/1023750727698510/search/?query=${name}`;
-    const from_date = moment(date.from);
 
+  getEventType(event_key) {
+    const event_types = {
+      hackathon: "Hackathon",
+      workshop: "Workshop",
+      conference: "Conference",
+      meetup: "Meetup",
+      open_event: "Open Event",
+    }
+
+    return event_types[event_key];
+  }
+
+  render() {
+    let {name, host, location, event_url, logo_url, event_type, color} = this.props;
     return (
-      <div className="header" style={{backgroundColor: color}}>
-        <div className="date">
-          <span className="month">{from_date.format('MMMM')}</span>
-          <span className="day">{from_date.format('D')}</span>
-        </div>
-        <div className="action-items">
-          <a className="posts" target="_blank" href={search_link}>
-            <CommentIcon /> Search for Posts
-          </a>
+      <div className="body">
+        <img className="logo" src={logo_url} />
+        <div className="info">
+          <h1>{name}</h1>
+          <span className="host">{host}</span>
+          <span className="location">{location}, FL</span>
+          <span className="type">{this.getEventType(event_type)}</span>
           <a className="cal" target="_blank" href={this.getCalendarUrl()}>
-            <PlusIcon />  Save GCal Event
+            Save GCal Event
           </a>
         </div>
       </div>
-    )
+    );
   }
 }
 
-const EventBody = ({
-  name, host, location, event_url, logo_url, event_type, color
-}) => {
-  return (
-    <a target="_blank" href={event_url || '#'} className="body">
-      <img className="logo" src={logo_url} />
-      <div className="info">
-        <h1>{name}</h1>
-        <span className="host">{host}</span>
-        <span className="location">{location}, FL</span>
-        <span className="type">{event_type}</span>
-      </div>
-    </a>
-  )
-}
-
-const PlusIcon = () => {
+const HomeIcon = () => {
   return (
     <svg className="plus-icon" viewBox="0 0 8 8">
       <defs>

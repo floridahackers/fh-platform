@@ -50,6 +50,10 @@ body.add-event {
     padding: 24px 32px;
 }
 
+.EventForm .button-submit { 
+    
+}
+
 .EventForm .InputGroup {
     margin-bottom: 28px;
     label {
@@ -88,5 +92,36 @@ body.add-event {
         color: rgba($fh-brown, .8);
         font-size: .9em;
         margin-top: 8px,;
+    }
+}
+
+
+.EventForm .CheckboxInput {
+    margin-bottom: 12px;
+    .box {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        margin-right: 10px;
+        border-radius: 3px;
+        display: inline-block;
+        background: transparent;
+        z-index: 1;
+        cursor: pointer;
+        border: 2px solid $fh-brown;
+        vertical-align: sub;
+    }
+    .inner-box {
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 2px; 
+        left: 2px;
+        border-radius: 3px;
+        display: block;
+        background: $fh-brown;
+    }
+    .label {
+        color: $fh-brown;
     }
 }

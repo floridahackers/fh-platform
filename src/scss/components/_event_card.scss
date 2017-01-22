@@ -104,6 +104,9 @@
         font-style: italic;
         font-size: 1.05em;
         margin-bottom: 4px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .location {
         display: block;

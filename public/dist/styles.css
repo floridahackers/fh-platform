@@ -1,65 +1,65 @@
 /* Light */
 @font-face {
   font-family: 'Pier Sans';
-  src: url(/6339f63b0c26e328e4dcd9633e283db4.woff2) format("woff2"), url(/2818833a67c0d74d8652432bed3e96b7.woff) format("woff");
+  src: url(/dist/6339f63b0c26e328e4dcd9633e283db4.woff2) format("woff2"), url(/dist/2818833a67c0d74d8652432bed3e96b7.woff) format("woff");
   font-weight: 100;
   font-style: normal; }
 
 @font-face {
   font-family: 'Pier Sans';
-  src: url(/1fbd33c197a2fd6de11721e032e87cb5.woff2) format("woff2"), url(/5a36b03cfd96f5515dd3eda973162f40.woff) format("woff");
+  src: url(/dist/1fbd33c197a2fd6de11721e032e87cb5.woff2) format("woff2"), url(/dist/5a36b03cfd96f5515dd3eda973162f40.woff) format("woff");
   font-weight: 100;
   font-style: italic; }
 
 /* Regular */
 @font-face {
   font-family: 'Pier Sans';
-  src: url(/ea8c9e94ec1808d63f00e8fa27caa4de.woff2) format("woff2"), url(/858757bbd434820b2928c318b0481b7c.woff) format("woff");
+  src: url(/dist/ea8c9e94ec1808d63f00e8fa27caa4de.woff2) format("woff2"), url(/dist/858757bbd434820b2928c318b0481b7c.woff) format("woff");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'Pier Sans';
-  src: url(/c6a10709fe9e4d7ac7b0ad98731cf63a.woff2) format("woff2"), url(/a2dcc100d72502367e83b53c210af97f.woff) format("woff");
+  src: url(/dist/c6a10709fe9e4d7ac7b0ad98731cf63a.woff2) format("woff2"), url(/dist/a2dcc100d72502367e83b53c210af97f.woff) format("woff");
   font-weight: 400;
   font-style: italic; }
 
 /* Medium */
 @font-face {
   font-family: 'Pier Sans';
-  src: url(/947759c67822550e9dfedfdfebb11215.woff2) format("woff2"), url(/390776ec32011ad171e8fe49262f9567.woff) format("woff");
+  src: url(/dist/947759c67822550e9dfedfdfebb11215.woff2) format("woff2"), url(/dist/390776ec32011ad171e8fe49262f9567.woff) format("woff");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Pier Sans';
-  src: url(/c044c7a69f8d90c5c0588b9724f55035.woff2) format("woff2"), url(/63a6abb24d860c44fca67ef55e26a731.woff) format("woff");
+  src: url(/dist/c044c7a69f8d90c5c0588b9724f55035.woff2) format("woff2"), url(/dist/63a6abb24d860c44fca67ef55e26a731.woff) format("woff");
   font-weight: 500;
   font-style: italic; }
 
 /* Bold */
 @font-face {
   font-family: 'Pier Sans';
-  src: url(/e663cb60934f6f34618c9f30f23ee936.woff2) format("woff2"), url(/ec2da7533a5d020f28c5884b3583caea.woff) format("woff");
+  src: url(/dist/e663cb60934f6f34618c9f30f23ee936.woff2) format("woff2"), url(/dist/ec2da7533a5d020f28c5884b3583caea.woff) format("woff");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
   font-family: 'Pier Sans';
-  src: url(/7a7811bd0ac6925814b7d4024ba7146b.woff2) format("woff2"), url(/9b4590890adbba2dba2bbb72af79d986.woff) format("woff");
+  src: url(/dist/7a7811bd0ac6925814b7d4024ba7146b.woff2) format("woff2"), url(/dist/9b4590890adbba2dba2bbb72af79d986.woff) format("woff");
   font-weight: 600;
   font-style: italic; }
 
 /* Black */
 @font-face {
   font-family: 'Pier Sans';
-  src: url(/4f2df38d38d84fe131c45589148c5df9.woff2) format("woff2"), url(/92d47059a6b8bba97b95a62df9632861.woff) format("woff");
+  src: url(/dist/4f2df38d38d84fe131c45589148c5df9.woff2) format("woff2"), url(/dist/92d47059a6b8bba97b95a62df9632861.woff) format("woff");
   font-weight: 800;
   font-style: normal; }
 
 @font-face {
   font-family: 'Pier Sans';
-  src: url(/895a6d988ea280284ab632fec98e8e52.woff2) format("woff2"), url(/26a4e97d55e94bd3b5d566af3f35cc97.woff) format("woff");
+  src: url(/dist/895a6d988ea280284ab632fec98e8e52.woff2) format("woff2"), url(/dist/26a4e97d55e94bd3b5d566af3f35cc97.woff) format("woff");
   font-weight: 800;
   font-style: italic; }
 

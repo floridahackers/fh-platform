@@ -60,6 +60,7 @@ class CalendarApp extends React.Component {
     	<div>
       		<UpcomingEvents events={upcoming_events} />
       		<h2 style={{marginTop: "36px"}}>Past Events</h2>
+      		<PastEvents events={upcoming_events} />
 		</div>
     );
   }

@@ -15,12 +15,13 @@ class AddEvent extends React.Component {
     this.handleChange = this.handleChange.bind(this);
 
     this.state = {
-      valid: true,
+      valid: false,
       submitted: false,
       approved: false,
       event_info: {
         name: "MangoHacks",
         color: "#F8B93E",
+        website_url: null,
         logo_url: null,
         date: {
           from: moment().hour(12).toDate().getTime(),
@@ -29,9 +30,10 @@ class AddEvent extends React.Component {
         event_url: null,
         host: null,
         location: null,
-        event_type: "hackathon",
+        event_type: null,
         venue_needed: false,
         venue_confirmed: false
+
       },
       contact_info: {
         name: null,
@@ -44,25 +46,7 @@ class AddEvent extends React.Component {
     let valid = event.is_valid;
     let value = event.value;
 
-    value.valid = this.checkValid();
-    this.setState(value);
-  }
-
-  checkValid() {
-    return this.state.event_info.name != null && 
-      this.state.event_info.name.trim() != "" &&
-      this.state.event_info.logo_url != null &&
-      this.state.event_info.logo_url.trim() != "" &&
-      this.state.event_info.event_url != null &&
-      this.state.event_info.event_url.trim() != "" &&
-      this.state.event_info.location != null &&
-      this.state.event_info.location.trim() != "" &&
-      this.state.event_info.host != null &&
-      this.state.event_info.host.trim() != "" &&
-      this.state.contact_info.name != null &&
-      this.state.contact_info.name.trim() != "" &&
-      this.state.contact_info.email != null &&
-      this.state.contact_info.email.trim() != ""
+    this.setState(event.value);
   }
 
   render() {
@@ -99,7 +83,6 @@ class EventForm extends React.Component {
     super(props);
 
     this.onTextInputChange = this.onTextInputChange.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
   }
 
   onTextInputChange(event, propkey, valkey) {
@@ -115,6 +98,7 @@ class EventForm extends React.Component {
         }
       }
     };
+
     onChange(state_frag);
   }
   
@@ -136,12 +120,9 @@ class EventForm extends React.Component {
         }
       }
     };
-    onChange(state_frag);
-  }
+    console.log(state_frag);
 
-  onSubmit() {
-    console.log("is valid", this.props.valid);
-    console.log("do submit")
+    onChange(state_frag);
   }
   
   render() {
@@ -163,112 +144,99 @@ class EventForm extends React.Component {
             color={this.props.event_info.color}
             onChange={(event) => this.onTextInputChange(event, "event_info", "color")}
           />
-        </div>
-        <div className="InputGroup">
-          <label>Website URL</label>
-          <TextInput 
-            name="event_url"
-            placeholder="http://floate.io"
-            value={this.props.event_info.event_url}
-            onChange={(event) => this.onTextInputChange(event, "event_info", "event_url")}
-            required={true}
-          />
-        </div>
-        <div className="InputGroup">
-          <label>Logo URL</label>
-          <TextInput 
-            name="logo_url"
-            placeholder="http://floate.io/logo.png"
-            value={this.props.event_info.logo_url}
-            onChange={(event) => this.onTextInputChange(event, "event_info", "logo_url")}
-            required={true}
-          />
-          <span className="helper-text">Logo must be a transparent png.</span>
-        </div>
-        <div className="InputGroup">
-          <label>Date</label>
-          <DateInput 
-            date={this.props.event_info.date.from}
-            onChange={(event) => this.onDateInputChange(event, "event_info", "from")}
-          />
-          <DateInput 
-            date={this.props.event_info.date.to}
-            onChange={(event) => this.onDateInputChange(event, "event_info", "to")}
-          />
-        </div>
-        <div className="InputGroup venue">
-          <label>Venue Conformation <small>(optional)</small></label>
-          <CheckboxInput
-            label="We require a venue."
-            value={this.props.event_info.vanue_needed}
-            onChange={(event) => this.onTextInputChange(event, "event_info", "venue_needed")}
-          />
-          { this.props.event_info.venue_needed &&
-              <CheckboxInput
-                label="We have secured a venue."
-                value={this.props.event_info.venue_confirmed}
-                onChange={(event) => this.onTextInputChange(event, "event_info", "venue_confirmed")}
-              />
-          }
-        </div>
-        <div className="InputGroup">
-          <label>School or Host</label>
-          <TextInput 
-            name="host"
-            placeholder="Institute of Tech"
-            value={this.props.event_info.host}
-            onChange={(event) => this.onTextInputChange(event, "event_info", "host")}
-            required={true}
-          />
-        </div>
-        <div className="InputGroup">
-          <label>Location</label>
-          <TextInput 
-            name="location"
-            placeholder="Orlando"
-            value={this.props.event_info.location}
-            onChange={(event) => this.onTextInputChange(event, "event_info", "location")}
-            required={true}
-          />, FL
-        </div>
-        <div className="InputGroup">
-          <label>Event Type</label>
-          <SelectInput 
-            name="event_type"
-            value={this.props.event_info.event_type}
-            onChange={(event) => this.onTextInputChange(event, "event_info", "event_type")}
-            required={true}
-          />
-        </div>
-        <div className="InputGroup">
-          <label>Contact Name</label>
-          <TextInput 
-            name="contact_name"
-            placeholder="Ada Lovelace"
-            value={this.props.contact_info.name}
-            onChange={(event) => this.onTextInputChange(event, "contact_info", "name")}
-            required={true}
-          />
-          <span className="helper-text">Will not be shared publicly.</span>
-        </div>
-        <div className="InputGroup">
-          <label>Contact Email</label>
-          <TextInput 
-            name="email"
-            placeholder="ada@lovelace.io"
-            value={this.props.contact_info.email}
-            onChange={(event) => this.onTextInputChange(event, "contact_info", "email")}
-            required={true}
-            type="email"
-          />
-          <span className="helper-text">Will not be shared publicly.</span>
-        </div>
+      </div>
+      <div className="InputGroup">
+        <label>Website URL</label>
+        <TextInput 
+          name="event_url"
+          placeholder="http://floate.io"
+          value={this.props.event_info.event_url}
+          onChange={(event) => this.onTextInputChange(event, "event_info", "event_url")}
+          required={true}
+        />
+      </div>
+      <div className="InputGroup">
+        <label>Logo URL</label>
+        <TextInput 
+          name="logo_url"
+          placeholder="http://floate.io/logo.png"
+          value={this.props.event_info.logo_url}
+          onChange={(event) => this.onTextInputChange(event, "event_info", "logo_url")}
+          required={true}
+        />
+        <span className="helper-text">Logo must be a transparent png.</span>
+      </div>
+      <div className="InputGroup">
+        <label>Date</label>
+        <DateInput 
+          date={this.props.event_info.date.from}
+          onChange={(event) => this.onDateInputChange(event, "event_info", "from")}
+        />
+        <DateInput 
+          date={this.props.event_info.date.to}
+          onChange={(event) => this.onDateInputChange(event, "event_info", "to")}
+        />
+      </div>
+      <div className="InputGroup venue">
+        <label>Venue Conformation</label>
+        <CheckboxInput
+          label="We require a venue."
+          value={this.props.event_info.vanue_needed}
+          onChange={(event) => this.onTextInputChange(event, "event_info", "venue_needed")}
+        />
+        { this.props.event_info.venue_needed &&
+            <CheckboxInput
+              label="We have secured a venue."
+              value={this.props.event_info.venue_confirmed}
+              onChange={(event) => this.onTextInputChange(event, "event_info", "venue_confirmed")}
+            />
+        }
+      </div>
+      <div className="InputGroup">
+        <label>School or Host</label>
+        <TextInput 
+          name="host"
+          placeholder="Institute of Tech"
+          value={this.props.event_info.host}
+          onChange={(event) => this.onTextInputChange(event, "event_info", "host")}
+          required={true}
+        />
+      </div>
+      <div className="InputGroup">
+        <label>Location</label>
+        <TextInput 
+          name="location"
+          placeholder="Orlando"
+          value={this.props.event_info.location}
+          onChange={(event) => this.onTextInputChange(event, "event_info", "location")}
+          required={true}
+        />, FL
+      </div>
 
-        <div className="button-submit">
-          <button disabled={!this.props.valid} onClick={this.onSubmit()}>
-            Submit for Review
-          </button>
-        </div>
+      <div className="InputGroup">
+        <label>Contact Name</label>
+        <TextInput 
+          name="contact_name"
+          placeholder="Ada Lovelace"
+          value={this.props.contact_info.name}
+          onChange={(event) => this.onTextInputChange(event, "contact_info", "name")}
+          required={true}
+        />
+        <span className="helper-text">Will not be shared publicly.</span>
+      </div>
+      <div className="InputGroup">
+        <label>Contact Email</label>
+        <TextInput 
+          name="email"
+          placeholder="ada@lovelace.io"
+          value={this.props.contact_info.email}
+          onChange={(event) => this.onTextInputChange(event, "contact_info", "email")}
+          required={true}
+          type="email"
+        />
+        <span className="helper-text">Will not be shared publicly.</span>
+      </div>
+
     </form>
     )
   }
@@ -380,43 +348,6 @@ class TextInput extends React.Component {
   }
 }
 
-class SelectInput extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: props.value || "open_event"
-    }  
-
-    this.handleChange = this.handleChange.bind(this);
-  }
-
-  handleChange(event) {
-    let val = event.target.value;
-    this.setState({
-      value: val
-    });
-
-    this.props.onChange({
-      is_valid: true,
-      value: val
-    });
-  }
-
-  render() {
-    return (
-      <div className="SelectInput">
-        <select value={this.state.value} onChange={this.handleChange}>
-          <option value="hackathon">Hackathon</option>
-          <option value="workshop">Workshop</option>
-          <option value="conference">Conference</option>
-          <option value="meetup">Meetup</option>
-          <option value="open_event">Open Event</option>
-        </select>
-      </div>
-    );
-  }
-}
-
 class DateInput extends React.Component {
   constructor(props){
     super(props);
@@ -480,7 +411,6 @@ class DateInput extends React.Component {
               <div style={ styles.cover  } onClick={ this.handleClose  }/>
               <DatePicker 
                 inline 
-                minDate={moment()} 
                 selected={ this.state.date  } 
                 onChange={ this.handleChange  } 
               />

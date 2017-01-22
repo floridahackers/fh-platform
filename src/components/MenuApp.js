@@ -5,7 +5,7 @@ const menu_items = [
   {
     label: 'Home',
     subtitle: 'Landing page + links to join the community.',
-    path: ''
+    path: 'index.html'
   },
   {
     label: 'Calendar',

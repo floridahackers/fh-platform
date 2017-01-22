@@ -86,6 +86,52 @@
 
 
 
+/* Light */
+@font-face {
+    font-family:'Avenir';
+    src: url('../fonts/Avenir/AvenirLTStd-Light.eot');
+    src: url('../fonts/Avenir/AvenirLTStd-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/AvenirLTStd-Light.woff2') format('woff2'),
+        url('../fonts/Avenir/AvenirLTStd-Light.woff') format('woff'),
+        url('../fonts/Avenir/AvenirLTStd-Light.svg#AvenirLTStd-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+/* Book */
+@font-face {
+    font-family:'Avenir';
+    src: url('../fonts/Avenir/AvenirLTStd-Book.eot');
+    src: url('../fonts/Avenir/AvenirLTStd-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/AvenirLTStd-Book.woff2') format('woff2'),
+        url('../fonts/Avenir/AvenirLTStd-Book.woff') format('woff'),
+        url('../fonts/Avenir/AvenirLTStd-Book.svg#AvenirLTStd-Book') format('svg');
+    font-weight: 350;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+/* Roman */
+@font-face {
+    font-family:'Avenir';
+    src: url('../fonts/Avenir/AvenirLTStd-Roman.eot');
+    src: url('../fonts/Avenir/AvenirLTStd-Roman.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/AvenirLTStd-Roman.woff2') format('woff2'),
+        url('../fonts/Avenir/AvenirLTStd-Roman.woff') format('woff'),
+        url('../fonts/Avenir/AvenirLTStd-Roman.svg#AvenirLTStd-Roman') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+
+
+
+
+
+
+
 
 
 

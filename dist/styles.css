@@ -3262,7 +3262,10 @@ body {
   display: block;
   font-style: italic;
   font-size: 1.05em;
-  margin-bottom: 4px; }
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .EventCard .body .location {
   display: block;
@@ -3979,7 +3982,11 @@ body.calendar {
   .calendar .intro p {
     font-size: 1.2em; }
 
-.calendar .UpcomingEvents {
-  display: flex; }
-  .calendar .UpcomingEvents .EventCard {
-    margin: 0 20px 20px 0; }
+.calendar .UpcomingEvents,
+.calendar .PastEvents {
+  display: flex;
+  flex-wrap: wrap; }
+  .calendar .UpcomingEvents .EventCard,
+  .calendar .PastEvents .EventCard {
+    margin: 0 20px 20px 0;
+    width: 260px; }

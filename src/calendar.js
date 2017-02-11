@@ -10,21 +10,6 @@ import past_events from './components/ArchivedEvents'
 
 const upcoming_events = [
 	{
-		"name":"SwampHacks",
-		"color":"#5adbed",
-		"logo_url":null,
-		"date": {
-			"from":1485107782441,
-			"to":1485107782441
-		},
-		"event_url":"http://swamphacks.com",
-		"host":"University of Florida",
-		"location":"Gainesville",
-		"event_type":"hackathon",
-		"venue_needed":false,
-		"venue_confirmed":false
-	},
-	{
 		"name":"HackFSU",
 		"color":"#5e2f4f",
 		"logo_url":null,
@@ -53,6 +38,31 @@ const upcoming_events = [
 		"event_type":"hackathon",
 		"venue_needed":true,
 		"venue_confirmed":true
+	},
+	{
+		"name":"PolyHacks",
+		"color":"#e7358b",
+		"website_url":null,"logo_url":null,
+		"date":{"from":1490461063000,"to":1488131863000},
+		"event_url":"http://polyhacks.com/",
+		"host":"Florida Polytechnic University",
+		"location":"Lakeland",
+		"event_type":"hackathon",
+		"venue_needed":false,
+		"venue_confirmed":false
+	},
+	{
+		"name":"KnightHacks",
+		"color":"#f9c42e",
+		"website_url":null,
+		"logo_url":null,
+		"date":{"from":1492189063000,"to":1492275463000},
+		"event_url":"http://knighthacks.org/",
+		"host":"University of Central Florida",
+		"location":"Orlando",
+		"event_type":"hackathon",
+		"venue_needed":false,
+		"venue_confirmed":false
 	}
 ];
 

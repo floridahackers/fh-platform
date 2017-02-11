@@ -1,4 +1,19 @@
 let past_events = [
+		{
+		"name":"SwampHacks",
+		"color":"#5adbed",
+		"logo_url":null,
+		"date": {
+			"from":1485107782441,
+			"to":1485107782441
+		},
+		"event_url":"http://swamphacks.com",
+		"host":"University of Florida",
+		"location":"Gainesville",
+		"event_type":"hackathon",
+		"venue_needed":false,
+		"venue_confirmed":false
+	},
 	{"name":"HackRiddle","color":"#10389b","logo_url":null,"date":{"from":1476548827000,"to":1476635227000},"event_url":"https://hackriddle.com/","host":"Embry-Riddle Aeronautical University","location":"Daytona Beach","event_type":"hackathon","venue_needed":true,"venue_confirmed":true},
 	{"name":"MIA Game Jam","color":"#1e8fd3","logo_url":null,"date":{"from":1477153627000,"to":1477240027000},"event_url":"http://www.miagamejam.com/","host":"Miami Dade College","location":"Miami","event_type":"hackathon","venue_needed":false,"venue_confirmed":true},
 	{"name":"Knight Hacks","color":"#ddc04a","logo_url":null,"date":{"from":1452878827000,"to":1452965227000},"event_url":"https://knighthacks.org/","host":"University of Central Florida","location":"Orlando","event_type":"hackathon","venue_needed":false,"venue_confirmed":true},

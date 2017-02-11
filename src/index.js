@@ -5,21 +5,6 @@ import EventCard from './components/EventCard';
 
 const upcoming_events = [
   {
-    "name":"SwampHacks",
-    "color":"#5adbed",
-    "logo_url":null,
-    "date": {
-      "from":1485107782441,
-      "to":1485107782441
-    },
-    "event_url":"http://swamphacks.com",
-    "host":"University of Florida",
-    "location":"Gainesville",
-    "event_type":"hackathon",
-    "venue_needed":false,
-    "venue_confirmed":false
-  },
-  {
     "name":"HackFSU",
     "color":"#5e2f4f",
     "logo_url":null,

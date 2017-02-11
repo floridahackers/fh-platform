@@ -63,6 +63,33 @@
   font-weight: 800;
   font-style: italic; }
 
+/* Light */
+@font-face {
+  font-family: 'Avenir';
+  src: url(/dist/fbf9301dba7208a3d951ed5270a2609a.eot);
+  src: url(/dist/fbf9301dba7208a3d951ed5270a2609a.eot?#iefix) format("embedded-opentype"), url(/dist/900cca4115be773e5db2011d098735bb.woff2) format("woff2"), url(/dist/1e95e6b4b5ef68ca1c718861b8c0deab.woff) format("woff"), url(/dist/5c21f7acf23f710dc373ddc2c047f3dc.svg#AvenirLTStd-Light) format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal; }
+
+/* Book */
+@font-face {
+  font-family: 'Avenir';
+  src: url(/dist/ac492c0d974a24cd2afac90dd4cd3fd6.eot);
+  src: url(/dist/ac492c0d974a24cd2afac90dd4cd3fd6.eot?#iefix) format("embedded-opentype"), url(/dist/10f7aa2c62fb0b8c57154c29e5c43db0.woff2) format("woff2"), url(/dist/e02835c6989eff2df5675bc51e278be1.woff) format("woff"), url(/dist/93cfd2dcaf525a4f9d0f2ac1a88e308b.svg#AvenirLTStd-Book) format("svg");
+  font-weight: 350;
+  font-style: normal;
+  font-stretch: normal; }
+
+/* Roman */
+@font-face {
+  font-family: 'Avenir';
+  src: url(/dist/e461fab75164ef557e7036e0c4ac4b2d.eot);
+  src: url(/dist/e461fab75164ef557e7036e0c4ac4b2d.eot?#iefix) format("embedded-opentype"), url(/dist/12e69d1b71efd251c9b5e71364645138.woff2) format("woff2"), url(/dist/169ccab9b12c1843439b1c5d7ba1cb3e.woff) format("woff"), url(/dist/2a80baccdd9dcd053664ad3c27a6dec3.svg#AvenirLTStd-Roman) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal; }
+
 /* Mobile First Breakpoints */
 /* Desktop First Breakpoints */
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */

@@ -1,5 +1,35 @@
 let past_events = [
-		{
+	{
+		"name":"MangoHacks",
+		"color":"#e5273e",
+		"logo_url":null,
+		"date":{
+		  "from":1487958982000,
+		  "to":1488131782000
+		},
+		"event_url":"http://mangohacks.com",
+		"host":"Florida International University",
+		"location":"Miami",
+		"event_type":"hackathon",
+		"venue_needed":true,
+		"venue_confirmed":true
+	},
+	{
+		"name":"HackFSU",
+		"color":"#5e2f4f",
+		"logo_url":null,
+		"date": {
+		  "from":1487354182000,
+		  "to":1487526982000
+		},
+		"event_url":"http://hackfsu.com",
+		"host":"Florida State University",
+		"location":"Tallahassee",
+		"event_type":"hackathon",
+		"venue_needed":true,
+		"venue_confirmed":true
+	},
+	{
 		"name":"SwampHacks",
 		"color":"#5adbed",
 		"logo_url":null,

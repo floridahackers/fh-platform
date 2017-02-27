@@ -10,36 +10,6 @@ import past_events from './components/ArchivedEvents'
 
 const upcoming_events = [
 	{
-		"name":"HackFSU",
-		"color":"#5e2f4f",
-		"logo_url":null,
-		"date": {
-			"from":1487354182000,
-			"to":1487526982000
-		},
-		"event_url":"http://hackfsu.com",
-		"host":"Florida State University",
-		"location":"Tallahassee",
-		"event_type":"hackathon",
-		"venue_needed":true,
-		"venue_confirmed":true
-	},
-	{
-		"name":"MangoHacks",
-		"color":"#e5273e",
-		"logo_url":null,
-		"date":{
-			"from":1487958982000,
-			"to":1488131782000
-		},
-		"event_url":"http://mangohacks.com",
-		"host":"Florida International University",
-		"location":"Miami",
-		"event_type":"hackathon",
-		"venue_needed":true,
-		"venue_confirmed":true
-	},
-	{
 		"name":"PolyHacks",
 		"color":"#e7358b",
 		"website_url":null,"logo_url":null,
@@ -51,6 +21,7 @@ const upcoming_events = [
 		"venue_needed":false,
 		"venue_confirmed":false
 	},
+	{"name":"sudo HackStetson","color":"#2e7d32","website_url":null,"logo_url":null,"date":{"from":1491062610000,"to":1491149010000},"event_url":"http://hackstetson.com/","host":"Stetson University","location":"DeLand","event_type":null,"venue_needed":true,"venue_confirmed":true},
 	{
 		"name":"KnightHacks",
 		"color":"#f9c42e",

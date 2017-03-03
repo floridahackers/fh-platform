@@ -2,28 +2,20 @@ require('./components/shared');
 import React from 'react';
 import { render } from 'react-dom';
 import EventCard from './components/EventCard';
+import all_events from './all_events';
 
-const upcoming_events = [
-  {
-    "name":"PolyHacks",
-    "color":"#e7358b",
-    "website_url":null,"logo_url":null,
-    "date":{"from":1490461063000,"to":1488131863000},
-    "event_url":"http://polyhacks.com/",
-    "host":"Florida Polytechnic University",
-    "location":"Lakeland",
-    "event_type":"hackathon",
-    "venue_needed":false,
-    "venue_confirmed":false
-  },
-  {"name":"sudo HackStetson","color":"#2e7d32","website_url":null,"logo_url":null,"date":{"from":1491062610000,"to":1491149010000},"event_url":"http://hackstetson.com/","host":"Stetson University","location":"DeLand","event_type":null,"venue_needed":true,"venue_confirmed":true}
-];
+let event_sort_fn_new = (a, b) => {
+  return a.date.from - b.date.from
+}
+let new_events = all_events.filter(event => event.date.to - Date.now() > 0 && event.approved);
+new_events.sort(event_sort_fn_new);
+
 class HomeApp extends React.Component {
   render() {
     return (
       <div>
-        <EventCard info={upcoming_events[0]} />
-        <EventCard info={upcoming_events[1]} />
+        <EventCard info={new_events[0]} />
+        <EventCard info={new_events[1]} />
       </div>
     );
   }

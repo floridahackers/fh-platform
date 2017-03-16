@@ -27,20 +27,6 @@ let all_events = [
 		"approved": true
 	},
 	{
-		"name":"KnightHacks",
-		"color":"#f9c42e",
-		"website_url":null,
-		"logo_url":null,
-		"date":{"from":1492189063000,"to":1492275463000},
-		"event_url":"http://knighthacks.org/",
-		"host":"University of Central Florida",
-		"location":"Orlando",
-		"event_type":"hackathon",
-		"venue_needed":true,
-		"venue_confirmed":true,
-		"approved": true
-	},
-	{
 		"name":"MangoHacks",
 		"color":"#e5273e",
 		"logo_url":null,

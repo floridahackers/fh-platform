@@ -14,8 +14,10 @@ class HomeApp extends React.Component {
   render() {
     return (
       <div>
-        <EventCard info={new_events[0]} />
-        <EventCard info={new_events[1]} />
+        { new_events.length > 0 ?
+            new_events.slice(0,2).map((event, key) => <EventCard key={key} info={event}/>)
+            : <h3>No upcoming events right now.</h3>
+        }
       </div>
     );
   }

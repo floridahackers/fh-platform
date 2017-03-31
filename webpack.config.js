@@ -16,22 +16,18 @@ module.exports = {
   devtool: process.env.WEBPACK_DEVTOOL || 'eval-source-map',
   entry: {
     home: [
-      'webpack-dev-server/client?http://' + HOST + ":" + PORT,
       'webpack/hot/only-dev-server',
       './src/index.js'
     ],
     calendar: [
-      'webpack-dev-server/client?http://' + HOST + ":" + PORT,
       'webpack/hot/only-dev-server',
       './src/calendar.js'
     ],
     addevent: [
-      'webpack-dev-server/client?http://' + HOST + ":" + PORT,
       'webpack/hot/only-dev-server',
       './src/add-event.js'
     ],
     about: [
-      'webpack-dev-server/client?http://' + HOST + ":" + PORT,
       'webpack/hot/only-dev-server',
       './src/about.js'
     ],

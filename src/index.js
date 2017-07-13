@@ -23,5 +23,6 @@ class HomeApp extends React.Component {
   }
 }
 
+
 render(<HomeApp />, 
   document.querySelector('.events-app'));

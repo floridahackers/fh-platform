@@ -9,12 +9,13 @@ _coming soon_
 
 ## Development
 
-To run the site in development mode, you'll need node installed. Then simply open up a terminal and run this command to start up a server in development mode.
+To run the site in development mode, you'll need node installed. Then simply open up a terminal and run this command to start up a server in development mode at `http://localhost:8080/`
 
 ```
 npm run start
 ```
----
+
+##### Production build
 
 To generate an optimized, production ready build, simply run 
 ```

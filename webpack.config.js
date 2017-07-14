@@ -7,6 +7,15 @@ const extractSass = new ExtractTextPlugin({
   disable: process.env.NODE_ENV === "development"
 });
 
+const plugins = [
+  extractSass
+];
+
+if (process.env.NODE_ENV === 'production') {
+  const uglifyPligin = new webpack.optimize.UglifyJsPlugin({ sourceMap: true });
+  plugins.push(uglifyPligin);
+}
+
 var loaders = [
   {
     test: /\.js$/,
@@ -52,7 +61,7 @@ var loaders = [
 ];
 
 module.exports = {
-  devtool: "cheap-eval-source-map",
+  devtool: "source-map",
   entry: {
     home: ["./src/index.js"],
     calendar: ["./src/calendar.js"],
@@ -71,7 +80,5 @@ module.exports = {
   module: {
     rules: loaders
   },
-  plugins: [
-    extractSass
-  ]
+  plugins: plugins
 };

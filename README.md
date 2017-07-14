@@ -1,6 +1,6 @@
 # ⛱ Florida Hackers Site
 
-Hi there! This is where the source for the [Florida Hackers Site](http://floridahackers.com) live. The site serves as a hub to the different places where the Florida college tech community can connect with each other, as well as a hub to find past and upcoming events coming up in Florida. 
+Hi there! This is where the source for the [Florida Hackers Site](http://floridahackers.com) lives. The site serves as a hub to find the different places where the Florida college tech community can connect with each other, as well as a calendar to find past and upcoming events coming up in Florida. 
 
 ## Adding your own event
 

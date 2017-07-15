@@ -7,7 +7,7 @@ let past_events = [
 		  "from":1487958982000,
 		  "to":1488131782000
 		},
-		"event_url":"http://mangohacks.com",
+		"event_url":"https://mangohacks.com",
 		"host":"Florida International University",
 		"location":"Miami",
 		"event_type":"hackathon",

@@ -1,7 +1,3 @@
-before_install:
-- openssl aes-256-cbc -K $encrypted_9cf28b65941a_key -iv $encrypted_9cf28b65941a_iv
-  -in fh-deploy.enc -out fh-deploy -d
-
 language: node_js
 node_js:
   - "7"

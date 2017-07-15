@@ -90,7 +90,7 @@ let all_events = [
 "approved": true},
 	{"name":"FloridaTechHacks","color":"#6d323c","logo_url":null,"date":{"from":1459614427000,"to":1459700827000},"event_url":"http://www.floridatechhacks.com/","host":"Florida Institute of Technology","location":"Melbourne","event_type":"hackathon","venue_needed":true,"venue_confirmed":true,
 "approved": true},
-	{"name":"sudo","color":"#39ad38","logo_url":null,"date":{"from":1460219227000,"to":1460305627000},"event_url":"http://hackstetson.com/","host":"Stetson University","location":"DeLand","event_type":"hackathon","venue_needed":true,"venue_confirmed":true,
+	{"name":"sudo HackStetson","color":"#39ad38","logo_url":null,"date":{"from":1460219227000,"to":1460305627000},"event_url":"http://hackstetson.com/","host":"Stetson University","location":"DeLand","event_type":"hackathon","venue_needed":true,"venue_confirmed":true,
 "approved": true}
 ];
 

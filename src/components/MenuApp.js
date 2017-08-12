@@ -16,12 +16,7 @@ const menu_items = [
     label: 'About FH',
     subtitle: 'The ins and outs of how the community functions.',
     path: 'about.html'
-  },
-  // {
-  //   label: 'Add an Event',
-  //   subtitle: 'Find out how to add an event to the calendar.',
-  //   path: 'add-event.html'
-  // },
+  }
 ];
 
 class MenuApp extends React.Component {

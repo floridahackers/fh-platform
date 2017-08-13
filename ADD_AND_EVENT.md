@@ -15,6 +15,7 @@ If you don't want to deal with code, or don't know how to use Git/GitHub the eas
 - End Date
 - Your School/Host
 - Your Location 
+- Event Type 
 - A preferred color hex value (optional)
 
 Example: 
@@ -25,6 +26,7 @@ Example:
 - End Date: Aug 14, 1:00pm
 - Your School/Host: Institute Of Tech
 - Your Location: Orlando, FL
+- Event Type: Hackathon | Workshop | Conference | Meetup | Open Event
 - A preferred color hex value (optional): #F8B93E
 
 While this is a very low effort approach, it relies on a good samaritan that will submit a pull request for your event, so it might not be immediate.
@@ -49,6 +51,7 @@ You should have something that looks like this
     },
     "event_url":"http://polyhacks.com/",
     "host":"Florida Polytechnic University",
+    "event_type":"hackathon",
     "location":"Lakeland",
 }
 ```

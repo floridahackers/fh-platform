@@ -2,13 +2,13 @@
 
 Thank you for wanting to contribute to part of this amazing community. Folks like you make this community what it is. 
 
-**If you simply want to add your event to the site, check out the [ADD EVENT GUIDE](./ADD_AND_EVENT.md).**
+**If you simply want to add your event to the site, check out the [ADD EVENT GUIDE](./ADD_AN_EVENT.md).**
 
 Alright, lets get you up to speed.
 
 ## How to contribute a change
 
-Before submitting a pull request, open an issue explaining your idea/proposal in order to have some discussion started. If the idea is seems to go, fork the repo and implement your changes. Submit a pull request with details of what you did, possible screenshots, and any other comments you may have. 
+Before submitting a pull request, open an issue explaining your idea/proposal in order to have some discussion started. If the idea seems good to go, fork the repo and implement your changes. Submit a pull request with details of what you did, possible screenshots, and any other comments you may have. 
 
 If all looks good and a contributor accetps the changes, your change will be merged in and automatically deployed by the Travis pipeline. 
 
@@ -25,7 +25,7 @@ The meat of the site is under the `src` directory.
 
 We use react to put together some of the more interactive aspects of the site, along with some sprinkled js/jquery scripts to keep search engine accessibility easy without introducing complex server rendering setups. 
 
-We use webpack to compile the app scripts, styles, and components, with a custom which generates a different js file per html page. 
+We use webpack to compile the app scripts, styles, and components, with a custom configuration which generates a different js file per html page. 
 
 ### Compiling for development
 
@@ -52,11 +52,11 @@ The styles are done with Sass using the SCSS syntax and the entry point is under
 Big parts of the site rely on a combination of js/jquery and react. 
 The main entry points are `src/index.js`, `src/about.js`, and `src/calendar.js`
 
-These files include a shared scripts file that lets webpack compile our sass, as well as the menu that is used in every page. The menu bar is made sticky using the `sticky` jQuery plugin, and the contents of the overlay menu are rendered by the `MenuApp` react componentm, which simply iterates over an array of json objects. 
+These files include a shared scripts file that lets webpack compile our sass, as well as the menu that is used in every page. The menu bar is made sticky using the `sticky` jQuery plugin, and the contents of the overlay menu are rendered by the `MenuApp` react component, which simply iterates over an array of json objects. 
 
-The `index.js` file renders the upcoming events section on the homepage, from shared data in the `src/all_events.js` file which is the main event store.
+The `index.js` file renders the upcoming events section on the homepage from shared data in the `src/all_events.js` file which is the main event store.
 
-The `about.js` sets up simple scripts for navigation since with the table of contents since it's a content heavy page.
+The `about.js` sets up simple scripts for navigation with the table of contents since it's a content heavy page.
 
 The `calendar.js` file sets up the `CalendarApp` react component which splits events into Upcoming and Past. 
 

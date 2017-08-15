@@ -6,7 +6,7 @@ There are two ways of adding your event to the FH Site.
 
 ## Open an Issue
 
-If you don't want to deal with code, or don't know how to use Git/GitHub the easiest way to get your event started is to [Open and Issue](https://github.com/floridahackers/fh-platform/issues/new) with the title
+If you don't want to deal with code, or don't know how to use Git/GitHub the easiest way to get your event started is to [Open an Issue](https://github.com/floridahackers/fh-platform/issues/new) with the title
 `[Add Event Request] Add "my cool event"`, and with the following event details on the body: 
 
 - Event Name

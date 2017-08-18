@@ -1,5 +1,6 @@
 import React from "react";
 import moment from "moment";
+import {getEventType} from "../utils";
 
 class EventCard extends React.Component {
   render() {
@@ -91,18 +92,6 @@ class EventBody extends React.Component {
     return calendarUrl;
   }
 
-  getEventType(event_key) {
-    const event_types = {
-      hackathon: "Hackathon",
-      workshop: "Workshop",
-      conference: "Conference",
-      meetup: "Meetup",
-      open_event: "Open Event"
-    };
-
-    return event_types[event_key];
-  }
-
   render() {
     let { name, host, location, event_url, event_type, color } = this.props;
     return (
@@ -118,7 +107,7 @@ class EventBody extends React.Component {
             {location}, FL
           </span>
           <span className="type">
-            {this.getEventType(event_type)}
+            {getEventType(event_type)}
           </span>
           <a className="cal" target="_blank" href={this.getCalendarUrl()}>
             Save GCal Event

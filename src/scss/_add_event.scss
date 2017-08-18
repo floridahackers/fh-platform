@@ -54,6 +54,25 @@ body.add-event {
     
 }
 
+.AddEvent .source-preview {
+    h3 {
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+    .preview-wrap {
+        padding: 1px 16px;
+        box-shadow: 0px 0px 5px 1px rgba(6, 6, 6, 0.27) inset;
+        max-width: 280px;
+        color: #1d1d1d;
+        border-radius: 4px;
+        background: rgb(193, 154, 118);
+        pre {
+            overflow: hidden;
+            font-size: .9em;
+        }
+    }
+}
+
 .EventForm .InputGroup {
     margin-bottom: 28px;
     label {

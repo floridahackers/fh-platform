@@ -1,5 +1,17 @@
 let all_events = [
   {
+    "name": "Shellhacks",
+    "color": "#fc5bb4",
+    "date": {
+      "from": 1506702818000,
+      "to": 1506875618000
+    },
+    "event_url": "https://shellhacks.net",
+    "host": "Florida International University",
+    "location": "Miami",
+    "event_type": "hackathon"
+  },
+  {
     "name": "HackRiddle",
     "color": "#083791",
     "date": {

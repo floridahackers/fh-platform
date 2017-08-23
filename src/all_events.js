@@ -6,7 +6,7 @@ let all_events = [
       "from": 1509811806000,
       "to": 1509901806000
     },
-    "event_url": "hackriddle.com",
+    "event_url": "http://hackriddle.com",
     "host": "Embry-Riddle Aeronautical University",
     "location": "Daytona Beach",
     "event_type": "hackathon"

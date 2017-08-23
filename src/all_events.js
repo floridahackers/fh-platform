@@ -1,5 +1,17 @@
 let all_events = [
   {
+    "name": "HackRiddle",
+    "color": "#083791",
+    "date": {
+      "from": 1509811806000,
+      "to": 1509901806000
+    },
+    "event_url": "hackriddle.com",
+    "host": "Embry-Riddle Aeronautical University",
+    "location": "Daytona Beach",
+    "event_type": "hackathon"
+  },
+  {
     name: "PolyHacks",
     color: "#e7358b",
     date: { from: 1490461063000, to: 1490547492000 },

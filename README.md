@@ -6,6 +6,8 @@ Hi there! This is where the source for the [Florida Hackers Site](http://florida
 
 To learn how to add your own event to the Florida Hackers Site, checkout the [Add an event guide](./ADD_AN_EVENT.md). 
 
+![](https://travis-ci.org/floridahackers/fh-platform.svg?branch=master)
+
 ## Contributing
 
 If you'd like to contribute to this repo checkout the [Contributing Guide](./CONTRIBUTING.md) which will get you up to speed with the way the project is set up.

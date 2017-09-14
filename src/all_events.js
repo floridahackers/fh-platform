@@ -12,6 +12,18 @@ let all_events = [
     "event_type": "hackathon"
   },
   {
+    "name": "Knight Hacks",
+    "color": "#ddc04a",
+    "date": {
+      "from": 1507392645000,
+      "to": 1507479045000
+    },
+    "event_url": "http://knighthacks.org",
+    "host": "University of Central Florida",
+    "location": "Orlando",
+    "event_type": "hackathon"
+  },
+  {
     "name": "HackRiddle",
     "color": "#083791",
     "date": {

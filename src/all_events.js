@@ -1,4 +1,16 @@
 let all_events = [
+    {
+    "name": "MangoHacks",
+    "color": "#84ff09",
+    "date": {
+      "from": 1517591904000,
+      "to": 1517764704000
+    },
+    "event_url": "https://www.mangohacks.com",
+    "host": "Florida International University",
+    "location": "Miami",
+    "event_type": "hackathon"
+  },
   {
     "name": "Shellhacks",
     "color": "#fc5bb4",

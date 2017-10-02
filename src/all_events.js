@@ -27,8 +27,8 @@ let all_events = [
     "name": "HackRiddle",
     "color": "#083791",
     "date": {
-      "from": 1509811806000,
-      "to": 1509901806000
+      "from": 1510420523000,
+      "to": 1510506923000
     },
     "event_url": "http://hackriddle.com",
     "host": "Embry-Riddle Aeronautical University",

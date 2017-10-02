@@ -1,5 +1,18 @@
 let all_events = [
   {
+    "name": "UHack is Back!",
+    "color": "#f37423",
+    "date": {
+      "from": 1512236561000,
+      "to": 1512322961000
+    },
+    "event_url": "http://uhackis.life",
+    "host": "University of Miami",
+    "location": "Coral Gables",
+    "event_type": "hackathon"
+  },
+  
+  {
     "name": "Shellhacks",
     "color": "#fc5bb4",
     "date": {

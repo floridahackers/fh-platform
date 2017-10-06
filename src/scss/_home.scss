@@ -190,3 +190,74 @@
     margin-top: 50px;
     margin-bottom: 0px;
 }
+
+
+
+
+.wrapper {
+  margin: 10% auto;
+  width: 240px;
+}
+
+.icon {
+  float: left;
+  margin: 0 3px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.8em;
+  -webkit-font-smoothing: antialiased;
+  line-height: 5.1rem;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  -ms-transition: .3s;
+  transition: .3s;
+  &:hover {
+    margin: -3px 3px;
+  }
+}
+
+.footer {
+  background: #74d7ff;
+}
+
+.redheart {
+  color: #ff0000;
+  animation: heartbeat 3s infinite;
+  position: absolute;
+}
+
+@keyframes heartbeat {
+  0% {
+    font-size: 1em;
+  }
+
+  25% {
+    font-size: .75em;
+  }
+
+  50% {
+    font-size: 1em;
+  }
+
+  75% {
+    font-size: .75em;
+  }
+
+  100% {
+    font-size: 1em;
+  }
+}
+
+
+.icon-pos {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  .heart, .icon-pos {
+    float: center;
+  }
+}

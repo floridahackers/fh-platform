@@ -12,6 +12,18 @@ let all_events = [
     "event_type": "hackathon"
   },
   {
+    "name": "SwampHacks",
+    "color": "#2a3d52",
+    "date": {
+      "from": 1516417200,
+      "to": 1516568400
+    },
+    "event_url": "http://2018.swamphacks.com/",
+    "host": "University of Florida",
+    "location": "Gainesville",
+    "event_type": "hackathon"
+  },
+  {
     "name": "UHack is Back!",
     "color": "#f37423",
     "date": {

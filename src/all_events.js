@@ -15,8 +15,8 @@ let all_events = [
     "name": "SwampHacks",
     "color": "#2a3d52",
     "date": {
-      "from": 1516417200,
-      "to": 1516568400
+        "from": 1516382133000,
+        "to": 1516554933000
     },
     "event_url": "http://2018.swamphacks.com/",
     "host": "University of Florida",

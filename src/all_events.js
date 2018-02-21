@@ -1,5 +1,17 @@
 let all_events = [
     {
+      "name": "Hack-A-Bull",
+      "color": "#006747",
+      "date": {
+        "from": 1521907246000,
+        "to": 1519578046000
+      },
+      "event_url": "http://hackabull.io/",
+      "host": "SHPE: USF",
+      "location": "Tampa",
+      "event_type": "hackathon"
+    },
+    {
     "name": "MangoHacks",
     "color": "#84ff09",
     "date": {

@@ -1,5 +1,17 @@
 let all_events = [
     {
+      "name":"HackStetson",
+      "color":"#3D8E33",
+      "date":{
+          "from":1523109600,
+          "to":1523203200
+      },
+      "event_url":"http://greatercentralfloridatechfaire.com/",
+      "host":"Stetson University",
+      "event_type":"hackathon",
+      "location":"DeLand",
+    },
+    {
       "name": "Hack-A-Bull",
       "color": "#006747",
       "date": {

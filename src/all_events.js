@@ -10,7 +10,7 @@ let all_events = [
       "host":"Stetson University",
       "event_type":"hackathon",
       "location":"DeLand",
-    }
+    },
     {
       "name": "Hack-A-Bull",
       "color": "#006747",

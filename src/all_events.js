@@ -235,6 +235,18 @@ let all_events = [
     host: "Stetson University",
     location: "DeLand",
     event_type: "hackathon",
+  },
+  {
+    "name": "UHack",
+    "color": "#f37422",
+    "date": {
+      "from": 1543684043000,
+      "to": 1543770443000
+    },
+    "event_url": "https://uhack.miami/",
+    "host": "University of Miami",
+    "location": "Coral Gables",
+    "event_type": "hackathon"
   }
 ];
 

@@ -10,7 +10,7 @@ Alright, lets get you up to speed.
 
 Before submitting a pull request, open an issue explaining your idea/proposal in order to have some discussion started. If the idea seems good to go, fork the repo and implement your changes. Submit a pull request with details of what you did, possible screenshots, and any other comments you may have. 
 
-If all looks good and a contributor accetps the changes, your change will be merged in and automatically deployed by the Travis pipeline. 
+If all looks good and a contributor accetps the changes, your change will be merged in and automatically deployed. 
 
 
 ## Project basics
@@ -19,13 +19,13 @@ The FH site is made in HTML, CSS, and JS. What you see when you visit floridahac
 
 Under the public directory you'll also find an `images` directory with a logo and some graphics, as well as a `vendor` directory with some js depenencies that we use. 
 
-The `_scripts` directory contains scripts used for continuous deployment which you probably won't change, so let's not worry about that one too much.
-
 The meat of the site is under the `src` directory. 
 
 We use react to put together some of the more interactive aspects of the site, along with some sprinkled js/jquery scripts to keep search engine accessibility easy without introducing complex server rendering setups. 
 
 We use webpack to compile the app scripts, styles, and components, with a custom configuration which generates a different js file per html page. 
+
+The site is being hosted in Netlify which gives free SSL cets, ease of automatic deployment and provides previews of the site for every PR submitted.
 
 ### Compiling for development
 

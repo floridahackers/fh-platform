@@ -58,8 +58,8 @@ You should have something that looks like this
 
 Then add your object as the first entry of the `all_events` array and save. 
 
-All that's left is submitting a pull request with your change back to this repo, and once it gets merged it will be automatically deployed to the live site. 
+All that's left is submitting a pull request with your change back to this repo. When you submit a PR you'll see that Netlify generates a urs to preview your changes on the site. Make sure everything looks good there or make changes as necessary. Once it gets merged it will be automatically deployed to the live site. 
 
-**IMPORTANT NOTE** 
+**CONVINIENT NOTE** 
 
 Although you need to fork the repo, you might not need to clone and edit it on your machine. You can simply edit the `all-events.js` file on GitHub and submit the pull request right after.

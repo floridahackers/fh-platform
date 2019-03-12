@@ -1,5 +1,17 @@
 let all_events = [
     {
+      "name": "The Greater Central Florida Tech Faire + HatterHacks",
+      "color": "#585858",
+      "date": {
+      "from": 1554481154000,
+      "to": 1554653954000
+      },
+      "event_url": "http://greatercentralfloridatechfaire.com/",
+      "host": "Stetson University",
+      "location": "DeLand",
+      "event_type": "hackathon"
+    },
+    {
       "name": "ShellHacks",
       "color": "#ff1d8e",
       "date": {
